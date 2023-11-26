@@ -4,6 +4,7 @@
 	--black-color: #4c4d5f;
 	--white-color: #f2f2f2;
 	--greey-color: #d9d9d9;
+	--blue-color: #f2fafe;
 }
 * {
 	box-sizing: border-box;
@@ -23,4 +24,8 @@ body {
 main {
 	height: auto;
 	padding: 16px;
+}
+
+button:hover {
+	cursor: pointer;
 }

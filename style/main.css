@@ -74,13 +74,13 @@ li span {
 
 .plans-cards {
 	height: auto;
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .plans-cards .plans-cards__details {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	height: 96px;
 }
 
@@ -158,7 +158,7 @@ li span {
 
 /* Cambiar el fondo del switch cuando está activado */
 .switch input:checked + .slider {
-	background-color: var(--greey-color);
+	background-color: var(--primary-color);
 }
 
 /* Mover el botón deslizante al estado activado */
@@ -169,7 +169,7 @@ li span {
 .plans-cards__slider {
 	width: 100%;
 	height: auto;
-	border: 2px solid royalblue;
+	/* border: 2px solid royalblue; */
 	padding: 12px 0 12px 0;
 	margin-top: 16px;
 	display: grid;
@@ -242,4 +242,155 @@ li span {
 	color: var(--white-color);
 	font-size: 1.7rem;
 	text-transform: uppercase;
+}
+
+.plan-cards__other-options {
+	/* border: 3px solid greenyellow; */
+	width: 100%;
+	height: auto;
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 12px 0 12px 0;
+}
+
+.plan-cards__other-options h2 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.plan-cards__other-options .options-descriptions {
+	width: 80%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	margin: 16px 0 16px 0;
+	background-color: var(--white-color);
+	box-shadow: 0px 4px 9px 2px #d9d9d9;
+	/* border: 2px solid greenyellow; */
+}
+
+.options-descriptions div:first-child {
+	margin-left: 16px;
+}
+.options-descriptions div:last-child {
+	margin-right: 16px;
+	font-size: 2rem;
+	font-weight: 700;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.options-descriptions div h3 {
+	font-size: 1.7rem;
+	color: var(--black-color);
+	font-weight: 500;
+	margin: 8px 0 8px 0;
+}
+
+.options-descriptions div p {
+	font-size: 1.4rem;
+	color: var(--black-color);
+}
+
+.not-free span:last-child {
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: var(--black-color);
+	text-transform: uppercase;
+}
+
+.start-now {
+	width: 100%;
+	height: auto;
+	margin-top: 16px;
+	display: flex;
+	justify-content: center;
+}
+
+.start-now div {
+	width: 80%;
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px 0 20px;
+	background-color: var(--blue-color);
+	box-shadow: 0px 4px 7px 2px #d9d9d9;
+}
+.start-now div p {
+	font-size: 1.8rem;
+}
+.start-now div p .salto-line::after {
+	content: "\A";
+	white-space: pre;
+}
+
+.start-now div button {
+	border: none;
+	border-radius: 2px;
+	padding: 8px;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+.comun-questions {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+.comun-questions h2 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: var(--primary-color);
+}
+
+.comun-questions div {
+	width: 100%;
+	height: auto;
+	font-size: 1.4rem;
+}
+
+.comun-questions div {
+	width: 80%;
+	/* border: 1px solid red; */
+	margin-top: 12px;
+}
+
+.comun-questions div details {
+	width: 100%;
+	/* border: 1px solid green; */
+	height: auto;
+	color: var(--black-color);
+	margin: 16px 0 16px 0;
+	padding: 8px;
+}
+.comun-questions div details summary {
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.comun-questions div details p {
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-top: 4px;
+}
+
+summary {
+	list-style: none;
+}
+summary:hover {
+	cursor: pointer;
+}
+
+summary span {
+	float: right;
 }
